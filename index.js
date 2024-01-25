@@ -1,7 +1,12 @@
 //const express = require('express');
 import express from 'express';
 import {animal} from './routes/apiAnimal.js'
+
 const app = express();
+
+//middlewares
+app.use.json()
+
 const port = 4000;
 
 app.use('(/api/animal', animal)
